@@ -25,8 +25,9 @@ $settings = array(
 	)
 );
 function unstoopid_highlight_css() {
-	return file_get_contents("./style.css");
+	return file_get_contents( dirname(__FILE__) . "/style.css");
 }
+
 function unstoopid_maybe_highlight($content) {
 	global $settings;
 	preg_match_all("/<pre highlight.*?>(.*?)<\/pre>/s", $content, $matches);
