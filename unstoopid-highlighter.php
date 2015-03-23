@@ -16,7 +16,7 @@ $settings = array(
 	'keywords' => array(
 			'dotimes','dolist','do','format','for','when','then','if',
 			'with','else','end', 'setf','defvar','defmacro','defparameter',
-			'list','car','cdr','c[ad]+r', 'nil', 'mapcar','loop','in'
+			'list','car','cdr','c[ad]+r', 'nil', 'mapcar','loop','in',
 			'maphash', 'make-[a-z\-]+','lambda','fn'),
 	'patterns' => array(
 		'/(".*?")/'				=> '<span class="unstoopid-highlight-string">$1</span>',
