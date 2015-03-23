@@ -1,0 +1,33 @@
+.unstoopid-highlight-number {
+	color: #AE81FF;
+}
+.unstoopid-highlight-string {
+	color: #E6DB74;
+}
+.unstoopid-highlight-paren {
+	color: #FD971F;
+}
+.unstoopid-highlight-div {
+	background-color: #333333;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+}
+.unstoopid-highlight-keyword {
+	color: #F92672;
+	font-style: italic;
+	margin-right: 8px;
+}
+.unstoopid-highlight-sharpquote {
+	color: #F92672;
+	font-style: italic;
+}
+.unstoopid-highlight-global {
+	color: #66D9EF;
+}
+.unstoopid-highlight-symbol {
+	color: #A6E22E;
+}
+.unstoopid-highlight-boolean {
+	color: #AE81FF;
+}

@@ -1,0 +1,66 @@
+<style>.unstoopid-highlight-number {
+	color: #AE81FF;
+}
+.unstoopid-highlight-string {
+	color: #E6DB74;
+}
+.unstoopid-highlight-paren {
+	color: #FD971F;
+}
+.unstoopid-highlight-div {
+	background-color: #333333;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+}
+.unstoopid-highlight-keyword {
+	color: #F92672;
+	font-style: italic;
+	margin-right: 8px;
+}
+.unstoopid-highlight-sharpquote {
+	color: #F92672;
+	font-style: italic;
+}
+.unstoopid-highlight-global {
+	color: #66D9EF;
+}
+.unstoopid-highlight-symbol {
+	color: #A6E22E;
+}
+.unstoopid-highlight-boolean {
+	color: #AE81FF;
+}</style><p>Lorem ipsum sic dolat, rerum omnium magister usus. Lorem ipsum sic dolat, rerum omnium magister usus.
+Lorem ipsum sic dolat, rerum omnium magister usus. Lorem ipsum sic dolat, rerum omnium magister usus.
+Lorem ipsum sic dolat, rerum omnium magister usus. Lorem ipsum sic dolat, rerum omnium magister usus.
+Lorem ipsum sic dolat, rerum omnium magister usus. Lorem ipsum sic dolat, rerum omnium magister usus.
+Lorem ipsum sic dolat, rerum omnium magister usus. Lorem ipsum sic dolat, rerum omnium magister usus.
+Lorem ipsum sic dolat, rerum omnium magister usus. Lorem ipsum sic dolat, rerum omnium magister usus.</p>
+
+<pre> Just some pre text here
+so the highlighter should leave it alone</pre>
+
+But this block:
+
+<div class="unstoopid-highlight-div">&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>list </span><span class="unstoopid-highlight-number">1</span>&nbsp;<span class="unstoopid-highlight-number">2</span>&nbsp;<span class="unstoopid-highlight-number">3</span>&nbsp;<span class="unstoopid-highlight-number">4</span><span class="unstoopid-highlight-paren">)</span><br />
+</div>
+
+<div class="unstoopid-highlight-div"><span class="unstoopid-highlight-paren">(</span>*&nbsp;<span class="unstoopid-highlight-number">1</span>&nbsp;<span class="unstoopid-highlight-number">3</span><span class="unstoopid-highlight-paren">)</span></div>
+
+<div class="unstoopid-highlight-div"><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>defvar </span><span class="unstoopid-highlight-global">*x*</span>&nbsp;'<span class="unstoopid-highlight-paren">(</span><span class="unstoopid-highlight-number">1</span>&nbsp;<span class="unstoopid-highlight-number">2</span>&nbsp;<span class="unstoopid-highlight-number">3</span><span class="unstoopid-highlight-paren">))</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>defparameter </span>y+&nbsp;<span class="unstoopid-highlight-string">"hello&nbsp;world"</span><span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>dolist </span>el&nbsp;y+&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>format </span><span class="unstoopid-highlight-boolean">t&nbsp;</span><span class="unstoopid-highlight-string">"~A~%"</span>&nbsp;<span class="unstoopid-highlight-paren">))</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>caadr </span>my-list<span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>car </span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>cdr </span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my-list<span class="unstoopid-highlight-paren">))</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>cdr </span><span class="unstoopid-highlight-global">*x*</span><span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>dolist </span><span class="unstoopid-highlight-global">*p-list</span><span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>setf </span><span class="unstoopid-highlight-global">*x</span>&nbsp;<span class="unstoopid-highlight-number">1</span>&nbsp;<span class="unstoopid-highlight-global">*y</span>&nbsp;<span class="unstoopid-highlight-number">2</span>&nbsp;<span class="unstoopid-highlight-global">*z</span>&nbsp;<span class="unstoopid-highlight-number">0</span>.<span class="unstoopid-highlight-number">5</span><span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class="unstoopid-highlight-symbol">:a</span>&nbsp;<span class="unstoopid-highlight-number">1</span><span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>maphash </span><span class="unstoopid-highlight-sharpquote">#'</span><span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>lambda </span><span class="unstoopid-highlight-paren">(</span>key&nbsp;value<span class="unstoopid-highlight-paren">)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-paren">(</span><span class='unstoopid-highlight-keyword'>format </span><span class="unstoopid-highlight-boolean">t&nbsp;</span><span class="unstoopid-highlight-string">"~A&nbsp;=&nbsp;~A&nbsp;~C"</span>&nbsp;key&nbsp;value&nbsp;#\linefeed&nbsp;<span class="unstoopid-highlight-paren">))</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unstoopid-highlight-global">*basil*</span>&nbsp;<span class="unstoopid-highlight-paren">)</span><br />
+</div>
